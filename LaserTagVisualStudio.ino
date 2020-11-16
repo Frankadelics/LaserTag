@@ -78,7 +78,7 @@ void loop()
         shootLaser();
     }
 
-    if (!player1.getAlive())
+    if (player1.getAlive() == false)
     {
         Serial.print("Game Over! Health reached zero.");
         reset(player1);
